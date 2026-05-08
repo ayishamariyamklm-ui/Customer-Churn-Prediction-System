@@ -1,1 +1,274 @@
+2026-05-06 17:39:51,623 | churn_app | ERROR | run_app.py:55 | Failed to start application: 'api'
+
+2026-05-06 17:41:12,391 | churn_app | ERROR | run_app.py:55 | Failed to start application: 'debug'
+
+2026-05-06 17:45:53,891 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 17:45:53,995 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 17:45:53,995 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 17:45:54,021 | werkzeug | INFO | _internal.py:97 |  * Restarting with watchdog (windowsapi)
+
+2026-05-06 17:45:55,260 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 17:45:55,276 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 17:45:55,280 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 108-830-271
+
+2026-05-06 17:47:38,417 | werkzeug | INFO | _internal.py:97 |  * Detected change in "e:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\ba", reloading
+
+2026-05-06 17:47:38,781 | werkzeug | INFO | _internal.py:97 |  * Restarting with watchdog (windowsapi)
+
+2026-05-06 17:47:40,808 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 17:47:40,820 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 17:47:40,823 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 108-830-271
+
+2026-05-06 17:58:17,583 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 17:58:17,723 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 17:58:17,723 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 17:58:17,763 | werkzeug | INFO | _internal.py:97 |  * Restarting with watchdog (windowsapi)
+
+2026-05-06 17:58:19,134 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 17:58:19,146 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 17:58:19,152 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 108-830-271
+
+2026-05-06 18:11:45,620 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:11:45,672 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 18:11:45,672 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 18:11:45,677 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:11:46,811 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:11:46,827 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:11:46,831 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:13:17,524 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:13:17,570 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 18:13:17,571 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 18:13:17,573 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:13:18,956 | churn_app | INFO | run_app.py:50 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:13:19,012 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:13:19,042 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:18:54,070 | werkzeug | INFO | _internal.py:97 |  * Detected change in "E:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:18:54,223 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:18:55,599 | churn_app | INFO | run_app.py:52 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:18:55,613 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:18:55,616 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:19:02,034 | werkzeug | INFO | _internal.py:97 |  * Detected change in "E:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:19:02,187 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:19:03,272 | churn_app | INFO | run_app.py:52 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:19:03,281 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:19:03,284 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:19:08,962 | churn_app | INFO | run_app.py:52 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:19:08,989 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 18:19:08,989 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 18:19:08,991 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:19:10,085 | churn_app | INFO | run_app.py:52 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:19:10,097 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:19:10,099 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:19:32,963 | werkzeug | INFO | _internal.py:97 |  * Detected change in "E:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:19:33,134 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:19:33,402 | werkzeug | INFO | _internal.py:97 |  * Detected change in "e:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:19:33,603 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:19:35,061 | churn_app | INFO | run_app.py:51 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:19:35,077 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:19:35,082 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:19:35,240 | churn_app | INFO | run_app.py:51 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:19:35,251 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:19:35,254 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:20:52,562 | werkzeug | INFO | _internal.py:97 |  * Detected change in "E:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:20:52,562 | werkzeug | INFO | _internal.py:97 |  * Detected change in "e:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:20:52,771 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:20:52,771 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:20:54,276 | churn_app | INFO | run_app.py:60 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:20:54,293 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:20:54,296 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:20:54,382 | churn_app | INFO | run_app.py:60 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:20:54,392 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:20:54,397 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:21:00,829 | werkzeug | INFO | _internal.py:97 |  * Detected change in "E:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:21:00,839 | werkzeug | INFO | _internal.py:97 |  * Detected change in "e:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\scripts\\run_app.py", reloading
+
+2026-05-06 18:21:01,047 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:21:01,063 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:21:02,484 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:21:02,484 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:21:02,496 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:21:02,500 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:21:02,500 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 18:22:48,540 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:22:48,579 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 18:22:48,579 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 18:22:48,582 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 18:22:49,690 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 18:22:49,699 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 18:22:49,702 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 20:19:32,707 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 20:19:32,809 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 20:19:32,817 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 20:19:32,827 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 20:19:35,963 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 20:19:35,978 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 20:19:35,986 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 20:19:50,263 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:19:50] "GET / HTTP/1.1" 200 -
+
+2026-05-06 20:19:50,655 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:19:50] "GET /static/css/style.css HTTP/1.1" 200 -
+
+2026-05-06 20:19:50,691 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:19:50,693 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:19:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+
+2026-05-06 20:20:39,646 | churn_app | INFO | web_app.py:43 | Received input: {'tenure': 3.0, 'MonthlyCharges': 50.0, 'TotalCharges': 150.0, 'gender': 'Female', 'Partner': 'No', 'Dependents': 'No', 'InternetService': 'Fiber optic', 'Contract': 'Month-to-month', 'PaymentMethod': 'Credit card (automatic)'}
+
+2026-05-06 20:21:01,343 | churn_app | INFO | model_inference.py:42 | Model loaded successfully from models/churn_model.pkl
+
+2026-05-06 20:21:01,463 | churn_app | ERROR | model_inference.py:100 | Prediction failed: columns are missing: {'DeviceProtection', 'PhoneService', 'OnlineBackup', 'TechSupport', 'StreamingTV', 'OnlineSecurity', 'MultipleLines', 'StreamingMovies', 'SeniorCitizen', 'PaperlessBilling'}
+
+2026-05-06 20:21:01,466 | churn_app | ERROR | predict_pipeline.py:92 | Prediction pipeline failed: Error: columns are missing: {'DeviceProtection', 'PhoneService', 'OnlineBackup', 'TechSupport', 'StreamingTV', 'OnlineSecurity', 'MultipleLines', 'StreamingMovies', 'SeniorCitizen', 'PaperlessBilling'}
+
+2026-05-06 20:21:01,468 | churn_app | ERROR | web_app.py:57 | Prediction failed: Error: Error: columns are missing: {'DeviceProtection', 'PhoneService', 'OnlineBackup', 'TechSupport', 'StreamingTV', 'OnlineSecurity', 'MultipleLines', 'StreamingMovies', 'SeniorCitizen', 'PaperlessBilling'}
+
+2026-05-06 20:21:01,472 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:21:01] "POST /predict HTTP/1.1" 200 -
+
+2026-05-06 20:21:01,561 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:21:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+
+2026-05-06 20:21:01,611 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:21:01,614 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:21:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+
+2026-05-06 20:33:48,609 | werkzeug | INFO | _internal.py:97 |  * Detected change in "e:\\VS CODE\\The Developer's Arena Internship 6 months\\Month 4\\Customer_Churn_Prediction\\src\\inference\\predict_pipeline.py", reloading
+
+2026-05-06 20:33:49,222 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 20:33:50,826 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 20:33:50,840 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 20:33:50,843 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 20:34:43,560 | churn_app | INFO | run_app.py:58 |  Starting Customer Churn Web App...
+
+2026-05-06 20:34:43,561 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 20:34:43,593 | werkzeug | INFO | _internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+
+2026-05-06 20:34:43,594 | werkzeug | INFO | _internal.py:97 | [33mPress CTRL+C to quit[0m
+
+2026-05-06 20:34:43,596 | werkzeug | INFO | _internal.py:97 |  * Restarting with stat
+
+2026-05-06 20:34:44,811 | churn_app | INFO | run_app.py:58 |  Starting Customer Churn Web App...
+
+2026-05-06 20:34:44,811 | churn_app | INFO | run_app.py:59 | Host: 127.0.0.1, Port: 8000, Debug: True
+
+2026-05-06 20:34:44,823 | werkzeug | WARNING | _internal.py:97 |  * Debugger is active!
+
+2026-05-06 20:34:44,827 | werkzeug | INFO | _internal.py:97 |  * Debugger PIN: 114-227-725
+
+2026-05-06 20:34:51,772 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:34:51] "GET / HTTP/1.1" 200 -
+
+2026-05-06 20:34:52,036 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:34:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+
+2026-05-06 20:34:52,068 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:34:52,069 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:34:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+
+2026-05-06 20:35:24,767 | churn_app | INFO | web_app.py:43 | Received input: {'tenure': 6.0, 'MonthlyCharges': 100.0, 'TotalCharges': 600.0, 'gender': 'Female', 'Partner': 'No', 'Dependents': 'No', 'InternetService': 'No', 'Contract': 'Month-to-month', 'PaymentMethod': 'Bank transfer (automatic)'}
+
+2026-05-06 20:35:28,020 | churn_app | INFO | model_inference.py:42 | Model loaded successfully from models/churn_model.pkl
+
+2026-05-06 20:35:28,068 | churn_app | INFO | web_app.py:47 | Prediction result: {'prediction': 0, 'churn_probability': 0.2348, 'churn_risk': 'Low Risk'}
+
+2026-05-06 20:35:28,070 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:35:28] "POST /predict HTTP/1.1" 200 -
+
+2026-05-06 20:35:28,129 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:35:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+
+2026-05-06 20:35:28,179 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:35:28,181 | werkzeug | INFO | _internal.py:97 | 127.0.0.1 - - [06/May/2026 20:35:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 

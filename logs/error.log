@@ -1,0 +1,18 @@
+2026-05-06 17:39:51,623 | churn_app | ERROR | run_app.py:55 | Failed to start application: 'api'
+
+2026-05-06 17:41:12,391 | churn_app | ERROR | run_app.py:55 | Failed to start application: 'debug'
+
+2026-05-06 20:19:50,691 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:21:01,463 | churn_app | ERROR | model_inference.py:100 | Prediction failed: columns are missing: {'DeviceProtection', 'PhoneService', 'OnlineBackup', 'TechSupport', 'StreamingTV', 'OnlineSecurity', 'MultipleLines', 'StreamingMovies', 'SeniorCitizen', 'PaperlessBilling'}
+
+2026-05-06 20:21:01,466 | churn_app | ERROR | predict_pipeline.py:92 | Prediction pipeline failed: Error: columns are missing: {'DeviceProtection', 'PhoneService', 'OnlineBackup', 'TechSupport', 'StreamingTV', 'OnlineSecurity', 'MultipleLines', 'StreamingMovies', 'SeniorCitizen', 'PaperlessBilling'}
+
+2026-05-06 20:21:01,468 | churn_app | ERROR | web_app.py:57 | Prediction failed: Error: Error: columns are missing: {'DeviceProtection', 'PhoneService', 'OnlineBackup', 'TechSupport', 'StreamingTV', 'OnlineSecurity', 'MultipleLines', 'StreamingMovies', 'SeniorCitizen', 'PaperlessBilling'}
+
+2026-05-06 20:21:01,611 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:34:52,068 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-05-06 20:35:28,179 | churn_app | ERROR | web_app.py:111 | Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
