@@ -1,0 +1,93 @@
+# ===============================
+# PYTHON
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===============================
+# VIRTUAL ENVIRONMENTS
+# ===============================
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ===============================
+# ENV VARIABLES
+# ===============================
+.env.*
+!.env.example
+
+# ===============================
+# JUPYTER NOTEBOOKS
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# LOGS
+# ===============================
+logs/
+*.log
+
+# ===============================
+# MODEL FILES (ML ARTIFACTS)
+# ===============================
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+
+# ===============================
+# DATA FILES (OPTIONAL - KEEP RAW DATA IF SMALL)
+# ===============================
+data/processed/
+data/interim/
+
+# Uncomment if dataset is large
+# data/raw/
+
+# ===============================
+# ARTIFACTS
+# ===============================
+artifacts/
+*.png
+*.jpg
+*.jpeg
+
+# ===============================
+# TESTING
+# ===============================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===============================
+# IDE / EDITOR FILES
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===============================
+# OS FILES
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# DOCKER
+# ===============================
+docker/*.log
