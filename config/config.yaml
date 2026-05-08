@@ -1,0 +1,152 @@
+# =========================================================
+# CUSTOMER CHURN PREDICTION CONFIGURATION
+# =========================================================
+
+project:
+  name: telco_churn_prediction
+  version: 1.0
+  description: Customer churn prediction using ML pipeline
+
+# ---------------------------------------------------------
+# DATA CONFIGURATION
+# ---------------------------------------------------------
+data:
+  raw_data_path: data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
+  processed_data_path: data/processed/cleaned_telco_churn.csv
+  train_data_path: data/processed/train.csv
+  test_data_path: data/processed/test.csv
+  target_column: Churn
+  test_size: 0.2
+  random_state: 42
+
+# ---------------------------------------------------------
+# FEATURE ENGINEERING
+# ---------------------------------------------------------
+features:
+  numerical_features:
+    - tenure
+    - MonthlyCharges
+    - TotalCharges
+
+  categorical_features:
+    - gender
+    - SeniorCitizen
+    - Partner
+    - Dependents
+    - PhoneService
+    - MultipleLines
+    - InternetService
+    - OnlineSecurity
+    - OnlineBackup
+    - DeviceProtection
+    - TechSupport
+    - StreamingTV
+    - StreamingMovies
+    - Contract
+    - PaperlessBilling
+    - PaymentMethod
+
+  drop_columns:
+    - customerID
+
+  imputation:
+    numerical_strategy: median
+    categorical_strategy: most_frequent
+
+  encoding:
+    method: onehot
+
+  scaling:
+    method: standard
+
+# ---------------------------------------------------------
+# MODEL CONFIGURATION
+# ---------------------------------------------------------
+model:
+  baseline_models:
+    logistic_regression:
+      type: LogisticRegression
+      params:
+        max_iter: 1000
+        random_state: 42
+
+    random_forest:
+      type: RandomForestClassifier
+      params:
+        n_estimators: 200
+        max_depth: 10
+        random_state: 42
+
+    gradient_boosting:
+      type: GradientBoostingClassifier
+      params:
+        n_estimators: 150
+        learning_rate: 0.1
+        max_depth: 3
+        random_state: 42
+
+  final_model: random_forest
+
+# ---------------------------------------------------------
+# TRAINING CONFIGURATION
+# ---------------------------------------------------------
+training:
+  cross_validation:
+    folds: 5
+    scoring: accuracy
+
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc
+
+  save_model_path: models/churn_model.pkl
+
+# ---------------------------------------------------------
+# HYPERPARAMETER TUNING
+# ---------------------------------------------------------
+tuning:
+  method: grid_search
+
+  param_grid:
+    RandomForestClassifier:
+      n_estimators: [100, 200, 300]
+      max_depth: [5, 10, 20]
+      min_samples_split: [2, 5]
+
+# ---------------------------------------------------------
+# PIPELINE SETTINGS
+# ---------------------------------------------------------
+pipeline:
+  use_column_transformer: true
+  handle_unknown: ignore
+  verbose: true
+
+# ---------------------------------------------------------
+# LOGGING & ARTIFACTS
+# ---------------------------------------------------------
+logging:
+  log_level: INFO
+  log_file: logs/training.log
+
+artifacts:
+  model_dir: models/
+  plots_dir: reports/figures/
+  metrics_dir: reports/metrics/
+
+# ---------------------------------------------------------
+# RANDOM SEED (GLOBAL)
+# ---------------------------------------------------------
+global:
+  seed: 42
+
+# ---------------------------------------------------------
+# API CONFIGURATION
+# ---------------------------------------------------------
+api:
+  host: "0.0.0.0"
+  port: 5000
+  reload: true
+  debug: true   
