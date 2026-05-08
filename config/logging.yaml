@@ -1,0 +1,108 @@
+# =========================================================
+# CUSTOMERCHURN PREDICTION - LOGGING CONFIGURATION
+# =========================================================
+
+version: 1
+
+# ---------------------------------------------------------
+# LOG FORMATTERS
+# ---------------------------------------------------------
+formatters:
+  simple:
+    format: "[%(levelname)s] %(message)s"
+
+  detailed:
+    format: >
+      %(asctime)s | %(name)s | %(levelname)s |
+      %(filename)s:%(lineno)d | %(message)s
+
+# ---------------------------------------------------------
+# LOG HANDLERS
+# ---------------------------------------------------------
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  file_general:
+    class: logging.FileHandler
+    level: INFO
+    formatter: detailed
+    filename: logs/app.log
+    mode: a
+
+  file_error:
+    class: logging.FileHandler
+    level: ERROR
+    formatter: detailed
+    filename: logs/error.log
+    mode: a
+
+  training_file:
+    class: logging.FileHandler
+    level: INFO
+    formatter: detailed
+    filename: logs/training.log
+    mode: a
+
+  preprocessing_file:
+    class: logging.FileHandler
+    level: INFO
+    formatter: detailed
+    filename: logs/preprocessing.log
+    mode: a
+
+  prediction_file:
+    class: logging.FileHandler
+    level: INFO
+    formatter: detailed
+    filename: logs/prediction.log
+    mode: a
+
+# ---------------------------------------------------------
+# LOGGERS (MODULE LEVEL CONTROL)
+# ---------------------------------------------------------
+loggers:
+
+  # Root logger
+  root:
+    level: INFO
+    handlers: [console, file_general, file_error]
+
+  # Training pipeline logger
+  training_logger:
+    level: INFO
+    handlers: [training_file, file_error, console]
+    propagate: false
+
+  # Preprocessing logger
+  preprocessing_logger:
+    level: INFO
+    handlers: [preprocessing_file, file_error, console]
+    propagate: false
+
+  # Prediction / inference logger
+  prediction_logger:
+    level: INFO
+    handlers: [prediction_file, file_error, console]
+    propagate: false
+
+  # EDA logger (optional)
+  eda_logger:
+    level: INFO
+    handlers: [file_general, console]
+    propagate: false
+
+# ---------------------------------------------------------
+# ROOT LOGGER SETTINGS
+# ---------------------------------------------------------
+root:
+  level: INFO
+  handlers: [console, file_general, file_error]
+
+# ---------------------------------------------------------
+# GLOBAL LOGGING SETTINGS
+# ---------------------------------------------------------
+disable_existing_loggers: false

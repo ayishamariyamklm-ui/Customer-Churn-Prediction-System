@@ -1,0 +1,201 @@
+# =========================================================
+# CUSTOMER CHURN PREDICTION - PATH CONFIGURATION
+# =========================================================
+
+project_root: .
+
+# ---------------------------------------------------------
+# DATA PATHS
+# ---------------------------------------------------------
+data:
+  raw: data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
+
+  processed_dir: data/processed
+  processed:
+    cleaned: data/processed/churn_processed.csv
+    train: data/processed/train.csv
+    test: data/processed/test.csv
+    validation: data/processed/validation.csv
+
+  data_dictionary: data/data_dictionary.md
+
+# ---------------------------------------------------------
+# NOTEBOOKS
+# ---------------------------------------------------------
+notebooks:
+  dir: notebooks
+  eda: notebooks/01_eda.ipynb
+  feature_engineering: notebooks/02_feature_engineering.ipynb
+  model_experiments: notebooks/03_model_experiments.ipynb
+
+# ---------------------------------------------------------
+# SOURCE CODE DIRECTORIES
+# ---------------------------------------------------------
+src:
+  dir: src
+
+  data:
+    dir: src/data
+    loader: src/data/data_loader.py
+    preprocessing: src/data/data_preprocessing.py
+    validation: src/data/data_validation.py
+
+  features:
+    dir: src/features
+    engineering: src/features/feature_engineering.py
+    selection: src/features/feature_selection.py
+
+  models:
+    dir: src/models
+    training: src/models/model_training.py
+    evaluation: src/models/model_evaluation.py
+    registry: src/models/model_registry.py
+    tuning: src/models/hyperparameter_tuning.py
+
+  inference:
+    dir: src/inference
+    model_inference: src/inference/model_inference.py
+    predict_pipeline: src/inference/predict_pipeline.py
+
+  utils:
+    dir: src/utils
+    logger: src/utils/logger.py
+    exceptions: src/utils/exceptions.py
+    helpers: src/utils/helpers.py
+
+# ---------------------------------------------------------
+# MODEL ARTIFACTS
+# ---------------------------------------------------------
+models:
+  dir: models
+  trained_model: models/churn_model.pkl
+  best_model: models/best_model.pkl
+  preprocessor: models/preprocessor.pkl
+  metrics: models/metrics.json
+
+  registry_dir: models/registry
+  baseline_models_dir: models/baselines
+
+# ---------------------------------------------------------
+# TRAINING / PIPELINE ARTIFACTS
+# ---------------------------------------------------------
+artifacts:
+  dir: artifacts
+
+  feature_importance: artifacts/feature_importance.png
+  confusion_matrix: artifacts/confusion_matrix.png
+  shap_summary: artifacts/shap_summary.png
+  roc_curve: artifacts/roc_curve.png
+
+  pipeline_object: artifacts/pipeline.pkl
+  column_transformer: artifacts/column_transformer.pkl
+  scaler: artifacts/scaler.pkl
+  encoder: artifacts/encoder.pkl
+
+# ---------------------------------------------------------
+# REPORTS
+# ---------------------------------------------------------
+reports:
+  dir: reports
+
+  metrics_dir: reports/metrics
+  figures_dir: reports/figures
+  eda_dir: reports/eda
+
+  metrics: reports/metrics/
+  model_report: reports/metrics/model_report.json
+  classification_report: reports/metrics/classification_report.txt
+
+  confusion_matrix: reports/figures/confusion_matrix.png
+  roc_curve: reports/figures/roc_curve.png
+  feature_importance_plot: reports/figures/feature_importance.png
+  shap_summary_plot: reports/figures/shap_summary.png
+
+# ---------------------------------------------------------
+# LOGS
+# ---------------------------------------------------------
+logs:
+  dir: logs
+  app_log: logs/app.log
+  training_log: logs/training.log
+  preprocessing_log: logs/preprocessing.log
+  prediction_log: logs/prediction.log
+
+# ---------------------------------------------------------
+# APPLICATION
+# ---------------------------------------------------------
+app:
+  dir: app
+  flask_app: app/web_app.py
+  fastapi_app: app/api.py
+
+  templates_dir: app/templates
+  index_template: app/templates/index.html
+
+  static_dir: app/static
+  css_dir: app/static/css
+  js_dir: app/static/js
+  style_css: app/static/css/style.css
+  main_js: app/static/js/main.js
+
+# ---------------------------------------------------------
+# SCRIPTS
+# ---------------------------------------------------------
+scripts:
+  dir: scripts
+  train_pipeline: scripts/train_pipeline.py
+  evaluate_model: scripts/evaluate_model.py
+  run_app: scripts/run_app.py
+  batch_predict: scripts/batch_predict.py
+
+# ---------------------------------------------------------
+# TESTS
+# ---------------------------------------------------------
+tests:
+  dir: tests
+  test_data_preprocessing: tests/test_data_preprocessing.py
+  test_feature_engineering: tests/test_feature_engineering.py
+  test_model_training: tests/test_model_training.py
+  test_inference: tests/test_inference.py
+  test_api: tests/test_api.py
+
+# ---------------------------------------------------------
+# DOCUMENTATION
+# ---------------------------------------------------------
+docs:
+  dir: docs
+  architecture: docs/architecture.md
+  api_docs: docs/api_docs.md
+  model_report: docs/model_report.md
+  deployment_guide: docs/deployment_guide.md
+
+# ---------------------------------------------------------
+# DOCKER
+# ---------------------------------------------------------
+docker:
+  dir: docker
+  dockerfile: docker/Dockerfile
+  docker_compose: docker/docker-compose.yml
+
+# ---------------------------------------------------------
+# GITHUB ACTIONS / CI
+# ---------------------------------------------------------
+github:
+  workflows_dir: .github/workflows
+  ci_workflow: .github/workflows/ci.yml
+
+# ---------------------------------------------------------
+# CONFIG FILES
+# ---------------------------------------------------------
+config:
+  dir: config
+  main_config: config/config.yaml
+  paths_config: config/paths.yaml
+  logging_config: config/logging.yaml
+
+# ---------------------------------------------------------
+# OUTPUTS
+# ---------------------------------------------------------
+outputs:
+  dir: outputs
+  batch_predictions: outputs/batch_predictions.csv
