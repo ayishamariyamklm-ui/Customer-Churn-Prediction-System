@@ -1,0 +1,117 @@
+name: Customer Churn Prediction CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-test:
+    name: Build and Test ML Project
+    runs-on: ubuntu-latest
+
+    steps:
+      # -----------------------------------------------------
+      # Checkout repository
+      # -----------------------------------------------------
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # -----------------------------------------------------
+      # Setup Python
+      # -----------------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      # -----------------------------------------------------
+      # Cache pip dependencies
+      # -----------------------------------------------------
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # -----------------------------------------------------
+      # Install dependencies
+      # -----------------------------------------------------
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest flake8
+
+      # -----------------------------------------------------
+      # Create required runtime folders
+      # -----------------------------------------------------
+      - name: Create required folders
+        run: |
+          mkdir -p logs
+          mkdir -p models
+          mkdir -p artifacts
+          mkdir -p reports/metrics
+          mkdir -p reports/figures
+          mkdir -p outputs
+          mkdir -p data/processed
+
+      # -----------------------------------------------------
+      # Check project structure
+      # -----------------------------------------------------
+      - name: Validate project structure
+        run: |
+          test -f README.md
+          test -f requirements.txt
+          test -f config/config.yaml
+          test -f config/paths.yaml
+          test -f scripts/train_pipeline.py
+          test -f app/web_app.py
+          test -f app/api.py
+
+      # -----------------------------------------------------
+      # Run linting
+      # -----------------------------------------------------
+      - name: Run lint checks
+        run: |
+          flake8 src app scripts tests --max-line-length=100 --ignore=E203,W503,F401
+
+      # -----------------------------------------------------
+      # Run tests
+      # -----------------------------------------------------
+      - name: Run unit tests
+        run: |
+          pytest tests/ -v
+
+      # -----------------------------------------------------
+      # Optional: Train model in CI
+      # -----------------------------------------------------
+      # Enable this only if your dataset is committed to GitHub.
+      # If data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv is not in repo,
+      # keep this step commented.
+      #
+      # - name: Run training pipeline
+      #   run: |
+      #     python scripts/train_pipeline.py
+
+      # -----------------------------------------------------
+      # Optional: Upload generated artifacts
+      # -----------------------------------------------------
+      # Enable this only if the training step above is enabled.
+      #
+      # - name: Upload model artifacts
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: churn-model-artifacts
+      #     path: |
+      #       models/
+      #       artifacts/
+      #       reports/
