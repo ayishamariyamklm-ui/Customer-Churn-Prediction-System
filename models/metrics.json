@@ -1,0 +1,41 @@
+{
+    "best_model": "logistic_regression",
+    "selection_metric": "roc_auc",
+    "best_score": 0.8418713994161565,
+    "models": {
+        "logistic_regression": {
+            "accuracy": 0.8055358410220014,
+            "precision": 0.6572327044025157,
+            "recall": 0.5588235294117647,
+            "f1_score": 0.6040462427745664,
+            "roc_auc": 0.8418713994161565,
+            "cv_score": 0.8456012346931537
+        },
+        "random_forest": {
+            "accuracy": 0.8005677785663591,
+            "precision": 0.6597938144329897,
+            "recall": 0.5133689839572193,
+            "f1_score": 0.5774436090225564,
+            "roc_auc": 0.8404363326358212,
+            "cv_score": 0.84170538807359
+        },
+        "gradient_boosting": {
+            "accuracy": 0.8005677785663591,
+            "precision": 0.6597938144329897,
+            "recall": 0.5133689839572193,
+            "f1_score": 0.5774436090225564,
+            "roc_auc": 0.8406817535973545,
+            "cv_score": 0.8442348294617983
+        }
+    },
+    "dataset": {
+        "train_size": 5634,
+        "test_size": 1409,
+        "total_features": 19
+    },
+    "notes": {
+        "business_priority": "recall",
+        "reason": "Missing churn customers is more costly than false positives",
+        "class_imbalance_handling": "stratified train-test split"
+    }
+}
