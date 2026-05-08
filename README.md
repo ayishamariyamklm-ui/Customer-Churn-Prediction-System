@@ -97,6 +97,9 @@ customer-churn-prediction/
 │   ├── 02_feature_engineering.ipynb
 │   └── 03_model_experiments.ipynb
 │
+├── outputs/
+│   └── predictions.csv
+│
 ├── src/
 │   ├── __init__.py
 │   │
@@ -132,8 +135,8 @@ customer-churn-prediction/
 │
 ├── app/
 │   ├── __init__.py
-│   ├── web_app.py
-│   ├── api.py
+│   ├── web_app.py              # Flask UI
+│   ├── api.py                  # REST API (FastAPI optional)
 │   │
 │   ├── templates/
 │   │   └── index.html
@@ -178,7 +181,7 @@ customer-churn-prediction/
 │   ├── preprocessing.log
 │   └── training.log
 │
-├── artifacts/
+├── artifacts/                  
 │   ├── confusion_matrix.png
 │   └── roc_curve.png
 │
